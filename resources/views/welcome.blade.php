@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Бош саҳифа</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -79,22 +79,26 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+                <div class="content">
+                    <marquee>
+                        <div style="color: red"> Uyda qoling! | Stay at home! | Оставайтесь дома! | Уйда қолинг!</div>
+                    </marquee>
+                    <div class="title m-b-md">
+                        Коронавирус (Covid19)
+                    </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <div class="links">
+                        <a href="patient.blade.php" style="color: black">Маълумотларни кўриш</a>
+                        <!--<a href="https://laravel-news.com">Маълумотларни кўриш</a>-->
+                        <!--<a href="https://laracasts.com">Laracasts</a>
+                        <a href="https://laravel-news.com">News</a>
+                        <a href="https://blog.laravel.com">Blog</a>
+                        <a href="https://www.emerge-centre.uz">Nova</a>-->
+                        <a href="https://www.emerge-centre.uz" style="color: green">РШТЁИМ</a>
+                        <a href="https://kun.uz/covid19" style="color: red">Янгиликлар</a>
+                        <a href="https://minzdrav.uz" style="color: blue">Ўз ССВ</a>
+                    </div>
                 </div>
-            </div>
         </div>
     </body>
 </html>
