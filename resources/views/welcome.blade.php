@@ -68,12 +68,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">My account</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">Тизимга кириш</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}">Рўйхатдан ўтиш</a>
                         @endif
                     @endauth
                 </div>
@@ -88,7 +88,7 @@
                     </div>
 
                     <div class="links">
-                        <a href="patient.blade.php" style="color: black">Маълумотларни кўриш</a>
+                        <a href="{{route('show-page')}}" style="color: black">Маълумотларни кўриш</a>
                         <!--<a href="https://laravel-news.com">Маълумотларни кўриш</a>-->
                         <!--<a href="https://laracasts.com">Laracasts</a>
                         <a href="https://laravel-news.com">News</a>

@@ -1,11 +1,14 @@
 @extends('layouts.app')
-
+@section('title')
+    Register
+    @endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">
+                    <a href="{{route('enter-page')}}">Маълумотларни киритиш!</a></div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +17,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Сиз тизимда муваффаққиятли рўйхатдан ўтдингиз, тизимда маълумот киритиш учун юқорида берилган <i>Маълумотларни киритиш</i>га босинг!!!
                 </div>
             </div>
         </div>
