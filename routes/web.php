@@ -15,9 +15,7 @@ Route::get('/enter', function () {
     return view('enter');
 })->name('enter-page');
 
-Route::post('/enter/submit', function () {
-    return Request::all();
-})->name('enter-form');
+Route::post('/enter/submit', 'EnterController@submit')->name('enter-form');
 
 Auth::routes();
 

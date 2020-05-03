@@ -21,6 +21,15 @@
 
                         <form action="{{route('enter-form')}}" method="post">
                             @csrf
+                            @if($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                            @endforeach
+                                    </ul>
+                                </div>
+                                @endif
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" name="name" placeholder="enter the name" id="name" class="form-control">
