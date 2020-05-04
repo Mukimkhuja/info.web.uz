@@ -21,22 +21,13 @@
 
                         <form action="{{route('enter-form')}}" method="post">
                             @csrf
-                            @if($errors->any())
-                                <div class="alert alert-danger">
-                                    <ul>
-                                        @foreach($errors->all() as $error)
-                                            <li>{{ $error }}</li>
-                                            @endforeach
-                                    </ul>
-                                </div>
-                                @endif
+                            @include('inc.messages')
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" name="name" placeholder="enter the name" id="name" class="form-control">
-                            </div>
-                            <div class="form-group">
+                                <input type="text" name="name" placeholder="enter the name" id="name" class="form-control-sm">
+
                                 <label for="email">Email</label>
-                                <input type="text" name="email" placeholder="enter the email" id="email" class="form-control">
+                                <input type="text" name="email" placeholder="enter the email" id="email" class="form-control-sm">
                             </div>
                             <div class="form-group">
                                 <label for="subject">Theme message</label>
@@ -45,6 +36,32 @@
                             <div class="form-group">
                                 <label for="message">Message</label>
                                 <textarea name="message" id="message" class="form-control" placeholder="Enter the message"></textarea>
+                            </div>
+                            2-jadvalga kiritish:
+                            <div class="form-group">
+                                <label for="pname">Patient name</label>
+                                <input type="text" name="pname" placeholder="enter the patient name" id="pname" class="form-control-sm">
+
+                                <label for="fname">Patient f name</label>
+                                <input type="text" name="pname" placeholder="enter the patient f name" id="fname" class="form-control-sm">
+                            </div>
+                            <div class="form-group">
+                                <label for="sname">Patient s name</label>
+                                <input type="text" name="sname" placeholder="enter the patient surname" id="sname" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="sex">Patient's sex</label>
+                                <input type="text" name="sex" placeholder="enter the patient sex" id="sex" class="form-control-sm">
+
+                                <label for="age">Patient age</label>
+                                <input type="number" name="sex" placeholder="enter the patient age" id="age" class="form-control-sm">
+                            </div>
+                            <div class="form-group">
+                                <label for="weight">Patient's weight</label>
+                                <input type="number" name="weight" placeholder="enter the patient weight" id="weight" class="form-control-sm">
+
+                                <label for="height">Patient height</label>
+                                <input type="number" name="height" placeholder="enter the patient height" id="height" class="form-control-sm">
                             </div>
                             <button type="submit" class="btn-success">Send</button>
                         </form>
